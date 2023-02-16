@@ -1,0 +1,48 @@
+:root {
+  --dark-gray: #484848;
+  --orange: #fb6834;
+
+  --fc-primary: var(--dark-gray);
+  --fc-secondary: var(--orange);
+
+  --bp-tablet: 500px;
+  --bp-desktop: 800px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  color: var(--fc-primary);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+@media (min-width: 700px) {
+  .container {
+    width: 90%;
+  }
+}

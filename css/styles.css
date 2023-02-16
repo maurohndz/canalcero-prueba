@@ -1,0 +1,136 @@
+/* ######################### */
+/* Footer */
+footer {
+  background-color: var(--dark-gray);
+  padding: 47px 53px 70px;
+}
+
+.footer_wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+
+/* Image */
+.footer_image {
+  width: 79px;
+}
+
+/* Menu */
+.footer_menu {
+  list-style: none;
+}
+.footer_menu a {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  margin-bottom: 4px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Social networks */
+.footer_social {
+  display: flex;
+  gap: 45px;
+}
+.footer_social-fb {
+  width: 8.08px;
+  height: 18.28px;
+}
+.footer_social-ig {
+  width: 18.28px;
+  height: 18.28px;
+}
+.footer_social-tw {
+  width: 17.29px;
+  height: 13.83px;
+}
+
+/* ################################ */
+/* ################################ */
+/* Tablet */
+@media (min-width: 519px) {
+  /* ######################### */
+  /* Footer */
+  .footer_wrapper {
+    grid-template-areas:
+      "image menu"
+      "image menu"
+      "image social";
+  }
+
+  .footer_image {
+    grid-area: image;
+    width: 90%;
+    max-width: 200px;
+  }
+
+  .footer_menu {
+    grid-area: menu;
+  }
+
+  .footer_social {
+    grid-area: social;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: flex-end;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: 750px) {
+  /* ######################### */
+  /* Footer */
+  .footer_menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px 40px;
+  }
+}
+
+@media (min-width: 820px) {
+  /* ######################### */
+  /* Footer */
+  .footer_image {
+    max-width: 246px;
+  }
+}
+
+/* ################################ */
+/* ################################ */
+/* Desktop */
+@media (min-width: 1050px) {
+  /* ######################### */
+  /* Footer */
+  .footer_image {
+    max-width: 296px;
+  }
+
+  /* Menu */
+  .footer_menu {
+    gap: 4px 100px;
+  }
+  .footer_menu a {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  /* Social networks */
+  .footer_social {
+    gap: 65px;
+  }
+  .footer_social-fb {
+    width: 15.35px;
+    height: 34.71px;
+  }
+  .footer_social-ig {
+    width: 34.71px;
+    height: 34.71px;
+  }
+  .footer_social-tw {
+    width: 32.84px;
+    height: 26.27px;
+  }
+}
