@@ -4,9 +4,6 @@
 
   --fc-primary: var(--dark-gray);
   --fc-secondary: var(--orange);
-
-  --bp-tablet: 500px;
-  --bp-desktop: 800px;
 }
 
 * {
@@ -33,7 +30,7 @@ img {
 
 /* Container */
 .container {
-  width: 96%;
+  width: 90%;
   max-width: 1400px;
   margin: 0 auto;
   display: flex;

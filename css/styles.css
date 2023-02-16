@@ -1,7 +1,80 @@
 /* ######################### */
+/* Subscription */
+.subscription {
+  background-color: var(--orange);
+  padding: 44px 0 53px;
+}
+
+.subscription_wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+/* */
+.subscription_titles {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.subscription_subTitle {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #fff;
+  white-space: nowrap;
+}
+.subscription_title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* */
+.subscription_form {
+  width: 100%;
+  display: flex;
+}
+
+.subscription_input {
+  display: block;
+  flex: 1;
+  width: 50%;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  padding: 12px 15px 10px;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.subscription_input::placeholder {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.subscription_btn {
+  display: block;
+  flex: 1;
+  width: 50%;
+  border: 1px solid #fff;
+  border-radius: 0;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: var(--orange);
+}
+
+/* ######################### */
 /* Contact */
 .contact {
-  padding: 50px 12px 40px;
+  padding: 50px 0 40px;
 }
 
 .contact_title {
@@ -136,6 +209,30 @@ footer {
 
 @media (min-width: 750px) {
   /* ######################### */
+  /* Subscription */
+  .subscription_wrapper {
+    flex-flow: row;
+    align-items: flex-end;
+    max-width: 690px;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  .subscription_titles {
+    margin-bottom: 0;
+    width: fit-content;
+  }
+
+  .subscription_form {
+    margin-bottom: 7px;
+  }
+
+  .subscription_btn {
+    flex: 0;
+    padding: 0 30px;
+  }
+
+  /* ######################### */
   /* Footer */
   .footer_menu {
     display: grid;
@@ -156,6 +253,37 @@ footer {
 /* ################################ */
 /* Desktop */
 @media (min-width: 1050px) {
+  /* ######################### */
+  /* Subscription */
+  .subscription_wrapper {
+    max-width: 100%;
+    gap: 15px;
+  }
+
+  .subscription_subTitle {
+    font-size: 2.8rem;
+    line-height: 4.2rem;
+  }
+  .subscription_title {
+    font-size: 4.5rem;
+    line-height: 6.8rem;
+  }
+
+  .subscription_form {
+    margin-bottom: 20px;
+    gap: 15px;
+  }
+
+  .subscription_input {
+    font-size: 1.8rem;
+    line-height: 0.7rem;
+  }
+  .subscription_btn {
+    padding: 16px 63px;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+
   /* ######################### */
   /* Contact */
   .contact {
