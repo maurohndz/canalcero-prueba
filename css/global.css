@@ -31,8 +31,9 @@ img {
   width: 100%;
 }
 
+/* Container */
 .container {
-  width: 100%;
+  width: 96%;
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
@@ -44,5 +45,21 @@ img {
 @media (min-width: 700px) {
   .container {
     width: 90%;
+  }
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 60px;
+  background-color: var(--dark-gray);
+  color: #fff;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+}
+
+/* Desktop */
+@media (min-width: 1050px) {
+  .btn {
+    padding: 18px 133px;
   }
 }

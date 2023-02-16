@@ -1,8 +1,62 @@
 /* ######################### */
+/* Contact */
+.contact {
+  padding: 50px 12px 40px;
+}
+
+.contact_title {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.contact_wrapper {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+.contact_form {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 21px;
+}
+
+.contact_form_group {
+  display: flex;
+}
+
+.contact input,
+.contact textarea {
+  width: 100% !important;
+  padding: 12px 15px;
+  border: 1px solid var(--dark-gray);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+}
+
+.contact textarea {
+  height: 143px !important;
+}
+
+.contact_form_btn {
+  margin-left: auto;
+}
+
+/* ######################### */
 /* Footer */
 footer {
   background-color: var(--dark-gray);
-  padding: 47px 53px 70px;
+  padding: 47px 43px 70px;
 }
 
 .footer_wrapper {
@@ -102,6 +156,22 @@ footer {
 /* ################################ */
 /* Desktop */
 @media (min-width: 1050px) {
+  /* ######################### */
+  /* Contact */
+  .contact {
+    padding: 66px 0 108px;
+  }
+
+  .contact_wrapper {
+    max-width: 705px;
+  }
+
+  .contact_title {
+    font-weight: 500;
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+  }
+
   /* ######################### */
   /* Footer */
   .footer_image {
