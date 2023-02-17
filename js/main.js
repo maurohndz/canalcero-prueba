@@ -49,9 +49,13 @@ function slidesHide() {
   $(".hero_dots span").removeClass("details");
 }
 
-function slideShow(slide, dot) {
+function slideShow(slide, dot, fade) {
   slidesHide();
-  $(slide).fadeIn(500);
+  if (fade) {
+    $(slide).fadeIn(500);
+  } else {
+    $(slide).fadeIn();
+  }
   $(dot).addClass("details");
 }
 
@@ -62,7 +66,7 @@ function createSlider() {
     let dot = document.createElement("span");
     $(".hero_dots").append(dot);
 
-    $(dot).click(() => slideShow(item, dot));
+    $(dot).click(() => slideShow(item, dot, true));
   });
 
   slideShow($(".hero_item")[0], $(".hero_dots span")[0]);
