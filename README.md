@@ -3,8 +3,8 @@
 ## Github pages
 Link: https://maurohndz.github.io/canalcero-prueba/
 
-## Pagina desktop
+## Página desktop
 <img src="./readme/desktop.png" />
 
-## Pagina mobile
+## Página mobile
 <img src="./readme/mobile.png" />
