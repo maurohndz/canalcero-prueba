@@ -317,6 +317,10 @@ header {
   text-transform: uppercase;
 }
 
+.subscription_input:focus {
+  outline: none;
+}
+
 .subscription_btn {
   display: block;
   flex: 1;
